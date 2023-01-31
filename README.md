@@ -1,24 +1,15 @@
-# README
+# 🍃 Updraft
+This is my personal tool for organizing notes related to set releases for Magic: The Gathering.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# Rake Tasks
 
-* Ruby version
+## Fetching Cards from Scryfall
+We can download a JSON file from Scryfall containing all of the cards that have ever been released.
+This bundle is updated frequently but we should be able to fetch it after each set release.
+This is idempotent so it shouldn't break anything if you run it more than once.
 
-* System dependencies
+```
+bundle exec rake import:bulk_data
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
