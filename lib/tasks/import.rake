@@ -1,4 +1,4 @@
-require './lib/scryfall/bulk-data'
+require './lib/scryfall/bulk_data.rb'
 
 namespace :import do
   desc "Import the newest Scryfall Bulk Data set into the database"
