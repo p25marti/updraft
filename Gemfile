@@ -46,6 +46,9 @@ gem "bootsnap", require: false
 gem 'httparty', '~> 0.21.0'
 gem 'scryfall_rb', '~> 0.1.0'
 
+gem "interactor-rails", "~> 2.0"
+gem 'troupe', '~> 0.1.0'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

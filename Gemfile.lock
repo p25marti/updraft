@@ -98,6 +98,10 @@ GEM
     importmap-rails (1.1.5)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
+    interactor (3.1.2)
+    interactor-rails (2.2.1)
+      interactor (~> 3.0)
+      rails (>= 4.2)
     io-console (0.6.0)
     irb (1.6.2)
       reline (>= 0.3.0)
@@ -219,6 +223,7 @@ DEPENDENCIES
   debug
   httparty (~> 0.21.0)
   importmap-rails
+  interactor-rails (~> 2.0)
   jbuilder
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
