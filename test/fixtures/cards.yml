@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scryfall_id: MyString
+  name: MyString
+  oracle_text: MyString
+
+two:
+  scryfall_id: MyString
+  name: MyString
+  oracle_text: MyString
