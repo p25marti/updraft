@@ -191,6 +191,8 @@ GEM
       railties (>= 6.0.0)
     thor (1.2.1)
     timeout (0.3.1)
+    troupe (0.1.0)
+      interactor (~> 3.1)
     turbo-rails (1.3.3)
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
@@ -232,6 +234,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  troupe (~> 0.1.0)
   turbo-rails
   tzinfo-data
   web-console
