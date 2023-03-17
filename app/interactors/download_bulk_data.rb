@@ -34,7 +34,18 @@ class DownloadBulkData
         oracle_text: c["oracle_text"],
         set: c["set"],
         set_id: c["set_id"],
-        scryfall_uri: c["scryfall_uri"]
+        scryfall_uri: c["scryfall_uri"],
+        cmc: c["cmc"],
+        color_identity: c["color_identity"],
+        colors: c["colors"],
+        layout: c["layout"],
+        mana_cost: c["mana_cost"],
+        type_line: c["type_line"],
+        oracle_text: c["oracle_text"],
+        power: c["power"],
+        toughness: c["toughness"],
+        rarity: c["rarity"],
+        reprint: c["reprint"],
       ).save!
     end
   end

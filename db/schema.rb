@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_17_201132) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_17_202138) do
   create_table "cards", force: :cascade do |t|
     t.string "scryfall_id"
     t.string "name"
@@ -21,6 +21,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_17_201132) do
     t.string "set"
     t.string "set_id"
     t.string "scryfall_uri"
+    t.decimal "cmc"
+    t.string "color_identity"
+    t.string "colors"
+    t.string "layout"
+    t.string "mana_cost"
+    t.string "type_line"
+    t.string "power"
+    t.string "toughness"
+    t.string "rarity"
+    t.boolean "reprint"
   end
 
 end
