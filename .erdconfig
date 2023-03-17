@@ -1,2 +1,5 @@
 filename: docs/images/erd
 filetype: png
+exclude:
+  - ActiveRecord::InternalMetadata
+  - ActiveRecord::SchemaMigration
