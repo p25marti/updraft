@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_01_033520) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_17_172358) do
   create_table "cards", force: :cascade do |t|
     t.string "scryfall_id"
     t.string "name"
     t.string "oracle_text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "oracle_id"
   end
 
 end

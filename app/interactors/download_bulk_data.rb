@@ -11,7 +11,7 @@ class DownloadBulkData
 
   def download_cards
     puts "Fetching newest bulk exports..."
-    response = Scryfall::BulkData.type("oracle_cards")
+    response = Scryfall::BulkData.type("default_cards")
     puts "Found a bulk export from #{response.to_h.dig(:updated_at)}"
     puts "Downloading..."
 
@@ -27,7 +27,12 @@ class DownloadBulkData
     parsed_cards = JSON.parse(json_data)
 
     parsed_cards.each do |c|
-      Card.new(name: c["name"], scryfall_id: c["id"], oracle_text: c["oracle_text"]).save!
+      Card.new(
+        name: c["name"],
+        scryfall_id: c["id"],
+        oracle_id: c["oracle_id"],
+        oracle_text: c["oracle_text"],
+      ).save!
     end
   end
 end
