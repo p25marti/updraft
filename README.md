@@ -13,3 +13,6 @@ This is idempotent so it shouldn't break anything if you run it more than once.
 bundle exec rake import:bulk_data
 ```
 
+
+## Rails Models
+![Ruby on Rails Models](/docs/images/erd.png)
