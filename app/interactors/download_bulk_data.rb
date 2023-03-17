@@ -32,6 +32,8 @@ class DownloadBulkData
         scryfall_id: c["id"],
         oracle_id: c["oracle_id"],
         oracle_text: c["oracle_text"],
+        set: c["set"],
+        set_id: c["set_id"],
       ).save!
     end
   end

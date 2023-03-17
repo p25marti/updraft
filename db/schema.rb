@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_17_172358) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_17_200011) do
   create_table "cards", force: :cascade do |t|
     t.string "scryfall_id"
     t.string "name"
@@ -18,6 +18,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_17_172358) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "oracle_id"
+    t.string "set"
+    t.string "set_id"
   end
 
 end
