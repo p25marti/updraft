@@ -1,3 +1,5 @@
 class SetRelease < ApplicationRecord
-  validates :release_id, uniqueness: true
+  self.primary_key = :id
+
+  has_many :cards, foreign_key: :set_id
 end

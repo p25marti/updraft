@@ -6,8 +6,8 @@ class DownloadBulkData
 
   def call
     download_sets
-    # download_cards
-    # persist_cards
+    download_cards
+    persist_cards
   end
 
   def download_sets
@@ -17,7 +17,7 @@ class DownloadBulkData
     puts "Download complete, ingesting sets into database..."
     sets.each do |s|
       SetRelease.create(
-        release_id: s["id"],
+        id: s["id"],
         code: s["code"],
         name: s["name"],
         set_type: s["set_type"],

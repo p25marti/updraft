@@ -1,7 +1,7 @@
 class AddSetReleasesTable < ActiveRecord::Migration[7.0]
   def change
-    create_table :set_releases do |t|
-      t.string :release_id
+    create_table :set_releases, id: false, primary_key: :id do |t|
+      t.string :id
       t.string :code
       t.string :name
       t.string :set_type

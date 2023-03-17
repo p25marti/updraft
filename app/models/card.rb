@@ -1,3 +1,3 @@
 class Card < ApplicationRecord
-  validates :scryfall_id, uniqueness: true
+  belongs_to :set_release, foreign_key: :set_id
 end

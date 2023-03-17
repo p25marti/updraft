@@ -33,8 +33,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_17_222438) do
     t.boolean "reprint"
   end
 
-  create_table "set_releases", force: :cascade do |t|
-    t.string "release_id"
+  create_table "set_releases", id: false, force: :cascade do |t|
+    t.string "id"
     t.string "code"
     t.string "name"
     t.string "set_type"
