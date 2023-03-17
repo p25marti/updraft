@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_17_202138) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_17_222438) do
   create_table "cards", force: :cascade do |t|
     t.string "scryfall_id"
     t.string "name"
@@ -31,6 +31,18 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_17_202138) do
     t.string "toughness"
     t.string "rarity"
     t.boolean "reprint"
+  end
+
+  create_table "set_releases", force: :cascade do |t|
+    t.string "release_id"
+    t.string "code"
+    t.string "name"
+    t.string "set_type"
+    t.date "released_at"
+    t.integer "card_count"
+    t.string "icon_svg_uri"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

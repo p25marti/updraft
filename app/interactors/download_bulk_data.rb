@@ -5,8 +5,27 @@ class DownloadBulkData
   include Troupe
 
   def call
-    download_cards
-    persist_cards
+    download_sets
+    # download_cards
+    # persist_cards
+  end
+
+  def download_sets
+    puts "Fetching sets"
+    sets = Scryfall::Set.all()
+
+    puts "Download complete, ingesting sets into database..."
+    sets.each do |s|
+      SetRelease.create(
+        release_id: s["id"],
+        code: s["code"],
+        name: s["name"],
+        set_type: s["set_type"],
+        released_at: s["released_at"],
+        card_count: s["card_count"],
+        icon_svg_uri: s["icon_svg_uri"],
+      ).save!
+    end
   end
 
   def download_cards
@@ -41,7 +60,6 @@ class DownloadBulkData
         layout: c["layout"],
         mana_cost: c["mana_cost"],
         type_line: c["type_line"],
-        oracle_text: c["oracle_text"],
         power: c["power"],
         toughness: c["toughness"],
         rarity: c["rarity"],
