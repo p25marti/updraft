@@ -34,6 +34,7 @@ class DownloadBulkData
         oracle_text: c["oracle_text"],
         set: c["set"],
         set_id: c["set_id"],
+        scryfall_uri: c["scryfall_uri"]
       ).save!
     end
   end
