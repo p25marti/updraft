@@ -49,6 +49,9 @@ gem 'scryfall_rb', '~> 0.1.0'
 gem "interactor-rails", "~> 2.0"
 gem 'troupe', '~> 0.1.0'
 
+# For VueJS
+gem "vite_rails"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -70,6 +73,7 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
   gem "rails-erd"
+  gem "foreman"
 end
 
 group :test do
