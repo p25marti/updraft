@@ -1,6 +1,6 @@
 require './lib/scryfall/bulk_data.rb'
 
-class RandomCardController < ApplicationController
+class HomeController < ApplicationController
   def index
     @random = Scryfall::Card.random.to_h
   end
