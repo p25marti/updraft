@@ -51,6 +51,7 @@ gem 'troupe', '~> 0.1.0'
 
 # For VueJS
 gem "vite_rails"
+gem 'inertia_rails'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
