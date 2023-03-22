@@ -1,13 +1,13 @@
 <template>
   <a-page-header
     :title="set.name"
-    :sub-title="set.set_type"
+    :sub-title="capitalizedSetType"
   />
   <p>{{ set }}</p>
 </template>
 
 <script>
-  import { defineComponent } from 'vue';
+  import { capitalize, defineComponent } from 'vue';
   import Layout from '~/components/Layout.vue'
 
   export default defineComponent({
@@ -18,6 +18,11 @@
         type: Object,
         required: true,
         default: () => {{}}
+      }
+    },
+    computed: {
+      capitalizedSetType() {
+        return capitalize(this.set.set_type);
       }
     }
   });
