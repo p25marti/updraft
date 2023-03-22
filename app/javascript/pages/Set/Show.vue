@@ -1,8 +1,9 @@
 <template>
   <a-page-header
-    title="Home"
-    sub-title="Welcome to Updraft"
+    :title="set.name"
+    :sub-title="set.set_type"
   />
+  <p>{{ set }}</p>
 </template>
 
 <script>
@@ -12,5 +13,12 @@
   export default defineComponent({
     components: {},
     layout: Layout,
+    props: {
+      set: {
+        type: Object,
+        required: true,
+        default: () => {{}}
+      }
+    }
   });
 </script>

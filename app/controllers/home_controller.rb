@@ -1,11 +1,5 @@
-require './lib/scryfall/bulk_data.rb'
-
 class HomeController < ApplicationController
   def index
-    @sets = SetRelease.where(set_type: "expansion")
-
-    render inertia: 'Home/Index', props: {
-      sets: @sets
-    }
+    render inertia: 'Home/Index'
   end
 end
