@@ -1,6 +1,7 @@
 <template>
   <a-page-header
     title="Sets"
+    class="page-header"
     sub-title="Expansion sets released since 1993"
   />
   <a-row :gutter="[16, 16]">
@@ -12,7 +13,6 @@
       <Link :href="`/sets/${set.code}`">
         <a-card
           hoverable
-          style="width: 300px"
         >
           <a-card-meta
             :title="set.name"
@@ -48,8 +48,9 @@
 
 
 <style scoped>
-  .cover-set-release {
-    width: 100px;
-    height: 100px;
+  .page-header {
+    border: 1px solid rgb(235, 237, 240);
+    background: white;
+    margin-bottom: 16px;
   }
 </style>
