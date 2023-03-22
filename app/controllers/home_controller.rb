@@ -2,10 +2,10 @@ require './lib/scryfall/bulk_data.rb'
 
 class HomeController < ApplicationController
   def index
-    @random = Scryfall::Card.random.to_h
+    @sets = SetRelease.where(set_type: "expansion")
 
     render inertia: 'Home/Index', props: {
-      random: @random,
+      sets: @sets
     }
   end
 end
