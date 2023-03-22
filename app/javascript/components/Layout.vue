@@ -35,7 +35,7 @@
     },
     data() {
       return {
-        collapsed: ref(true),
+        collapsed: ref(false),
         selectedKeys: ref(['1']),
       };
     },

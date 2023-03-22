@@ -28,11 +28,11 @@
 
 <script>
   import { defineComponent } from 'vue';
-  import App from '~/components/App.vue'
+  import Layout from '~/components/Layout.vue'
 
   export default defineComponent({
     components: {},
-    layout: App,
+    layout: Layout,
     props: {
       sets: {
         type: Array,
