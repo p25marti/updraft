@@ -5,7 +5,10 @@
     :avatar="{ src: set.icon_svg_uri }"
   />
 
-  <a-row :gutter="[16, 16]">
+  <a-row
+    class="margin-bot-16"
+    :gutter="[16, 16]"
+  >
     <a-col :span="6">
       <a-card>
         <a-statistic
@@ -22,6 +25,7 @@
         />
       </a-card>
     </a-col>
+
     <a-col :span="6">
       <a-card>
         <a-statistic
@@ -40,14 +44,23 @@
     </a-col>
   </a-row>
 
+  <a-row :gutter="16">
+    <a-col :span="10">
+      <a-card title="Color Distribution">
+        <color-distribution />
+      </a-card>
+    </a-col>
+  </a-row>
+
 </template>
 
 <script>
   import { capitalize, defineComponent } from 'vue';
   import Layout from '~/components/Layout.vue'
+  import ColorDistribution from './ColorDistribution.vue';
 
   export default defineComponent({
-    components: {},
+    components: { ColorDistribution },
     layout: Layout,
     props: {
       set: {
@@ -71,6 +84,10 @@
   .page-header {
     border: 1px solid rgb(235, 237, 240);
     background: white;
+    margin-bottom: 16px;
+  }
+
+  .margin-bot-16 {
     margin-bottom: 16px;
   }
 </style>
