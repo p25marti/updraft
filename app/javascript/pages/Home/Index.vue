@@ -3,6 +3,7 @@
     title="Home"
     sub-title="Welcome to Updraft"
   />
+  <a-button type="primary">Test</a-button>
 </template>
 
 <script>
