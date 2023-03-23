@@ -46,7 +46,7 @@
           { value: 310, name: "Blue" },
           { value: 234, name: "Black" },
           { value: 135, name: "Red" },
-          { value: 1548, name: "Green" },
+          { value: 210, name: "Green" },
           { value: 24, name: "Colorless" }
         ],
         emphasis: {

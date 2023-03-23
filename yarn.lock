@@ -682,6 +682,11 @@ magic-string@^0.30.0:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.13"
 
+mana-font@^1.15.4:
+  version "1.15.4"
+  resolved "https://registry.yarnpkg.com/mana-font/-/mana-font-1.15.4.tgz#3d404865ba05c3ce40b2ec0a629566f51815affb"
+  integrity sha512-nK28g0Qlkn0EXv0J+mpaqsrHyPn58o9/eCac/6i8cvXiWiAig93GQ5lSA0jHwCQbmMz4MJcapbdYFMjNRflUIw==
+
 merge2@^1.3.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"

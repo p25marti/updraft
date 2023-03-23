@@ -4,6 +4,7 @@
     "@vitejs/plugin-vue": "^4.1.0",
     "ant-design-vue": "^3.2.15",
     "echarts": "^5.4.1",
+    "mana-font": "^1.15.4",
     "unplugin-vue-components": "^0.24.1",
     "vue": "^3.2.33",
     "vue-echarts": "^6.5.4"

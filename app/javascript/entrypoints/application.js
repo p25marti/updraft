@@ -3,6 +3,7 @@ import { createInertiaApp } from '@inertiajs/vue3';
 
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.variable.min.css';
+import 'mana-font/css/mana.min.css';
 
 import { ConfigProvider } from 'ant-design-vue';
 

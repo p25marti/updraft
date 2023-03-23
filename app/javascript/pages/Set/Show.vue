@@ -50,6 +50,12 @@
         <color-distribution />
       </a-card>
     </a-col>
+
+    <a-col :span="14">
+      <a-card>
+        <card-type-breakdown />
+      </a-card>
+    </a-col>
   </a-row>
 
 </template>
@@ -58,9 +64,10 @@
   import { capitalize, defineComponent } from 'vue';
   import Layout from '~/components/Layout.vue'
   import ColorDistribution from './ColorDistribution.vue';
+  import CardTypeBreakdown from './CardTypeBreakdown.vue';
 
   export default defineComponent({
-    components: { ColorDistribution },
+    components: { ColorDistribution, CardTypeBreakdown },
     layout: Layout,
     props: {
       set: {
