@@ -1,4 +1,5 @@
 # 🍃 Updraft
+TEST
 This is my personal tool for organizing notes related to set releases for Magic: The Gathering.
 
 
