@@ -1,0 +1,73 @@
+name: Lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        language: [ruby, javascript, typescript, css, yaml]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      if: matrix.language == 'ruby'
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0'
+
+    - name: Install RuboCop
+      if: matrix.language == 'ruby'
+      run: |
+        gem install rubocop
+
+    - name: Run RuboCop
+      if: matrix.language == 'ruby'
+      run: |
+        rubocop
+
+    - name: Set up Node.js
+      if: matrix.language == 'javascript' || matrix.language == 'typescript' || matrix.language == 'css'
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Install ESLint
+      if: matrix.language == 'javascript' || matrix.language == 'typescript'
+      run: |
+        npm install -g eslint
+
+    - name: Run ESLint
+      if: matrix.language == 'javascript' || matrix.language == 'typescript'
+      run: |
+        eslint .
+
+    - name: Install Stylelint
+      if: matrix.language == 'css'
+      run: |
+        npm install -g stylelint
+
+    - name: Run Stylelint
+      if: matrix.language == 'css'
+      run: |
+        stylelint "**/*.css"
+
+    - name: Install yamllint
+      if: matrix.language == 'yaml'
+      run: |
+        sudo apt-get install -y yamllint
+
+    - name: Run yamllint
+      if: matrix.language == 'yaml'
+      run: |
+        yamllint .
