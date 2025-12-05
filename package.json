@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@inertiajs/vue3": "^1.0.2",
+    "@inertiajs/vue3": "^2.2.19",
     "@vitejs/plugin-vue": "^4.1.0",
     "ant-design-vue": "^3.2.15",
     "echarts": "^5.4.1",
