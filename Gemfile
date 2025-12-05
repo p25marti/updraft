@@ -43,7 +43,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # For access to Scryfall API
-gem 'httparty', '~> 0.21.0'
+gem 'httparty', '~> 0.23.2'
 gem 'scryfall_rb', '~> 0.1.0'
 
 gem "interactor-rails", "~> 2.0"

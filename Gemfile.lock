@@ -68,6 +68,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
+    bigdecimal (3.3.1)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -84,6 +85,7 @@ GEM
     choice (0.2.0)
     concurrent-ruby (1.2.0)
     crass (1.0.6)
+    csv (3.3.5)
     date (3.3.3)
     debug (1.7.1)
       irb (>= 1.5.0)
@@ -93,7 +95,8 @@ GEM
     foreman (0.87.2)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    httparty (0.21.0)
+    httparty (0.23.2)
+      csv
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     i18n (1.12.0)
@@ -124,10 +127,11 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
-    mini_mime (1.1.2)
+    mini_mime (1.1.5)
     minitest (5.17.0)
     msgpack (1.6.0)
-    multi_xml (0.6.0)
+    multi_xml (0.7.2)
+      bigdecimal (~> 3.1)
     net-imap (0.3.4)
       date
       net-protocol
@@ -249,7 +253,7 @@ DEPENDENCIES
   capybara
   debug
   foreman
-  httparty (~> 0.21.0)
+  httparty (~> 0.23.2)
   importmap-rails
   inertia_rails
   interactor-rails (~> 2.0)
