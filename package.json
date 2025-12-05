@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@inertiajs/vue3": "^1.0.2",
-    "@vitejs/plugin-vue": "^4.1.0",
+    "@vitejs/plugin-vue": "^4.6.2",
     "ant-design-vue": "^3.2.15",
     "echarts": "^5.4.1",
     "mana-font": "^1.15.4",
