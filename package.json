@@ -1,16 +1,16 @@
 {
   "dependencies": {
-    "@inertiajs/vue3": "^1.0.2",
-    "@vitejs/plugin-vue": "^4.1.0",
-    "ant-design-vue": "^3.2.15",
-    "echarts": "^5.4.1",
-    "mana-font": "^1.15.4",
-    "unplugin-vue-components": "^0.24.1",
-    "vue": "^3.2.33",
-    "vue-echarts": "^6.5.4"
+    "@inertiajs/vue3": "^2.1.6",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "ant-design-vue": "^4.2.6",
+    "echarts": "^5.6.0",
+    "mana-font": "^1.18.0",
+    "unplugin-vue-components": "^29.0.0",
+    "vue": "^3.5.21",
+    "vue-echarts": "^7.0.3"
   },
   "devDependencies": {
-    "vite": "^4.2.0",
+    "vite": "^5.4.20",
     "vite-plugin-ruby": "^3.2.1"
   }
 }
